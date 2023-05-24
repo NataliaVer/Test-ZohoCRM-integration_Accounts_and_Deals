@@ -1,3 +1,7 @@
 Test task for ZohoCRM API integration
 
-![image](https://github.com/NataliaVer/Test-ZohoCRM-integration_Accounts_and_Deals/assets/33368867/331e8084-6332-402a-8352-df2917ff1000)
+How it work: Youtube link
+
+Title: Creating a Web Form for Zoho CRM Deals and Accounts using Vue.js and Laravel!
+
+Objective: To create a web form using Vue.js and Laravel as a backend that allows users to create a deal and account in Zoho CRM using the Zoho CRM API. The form should contain all the required fields to create these records and the records must be linked to each other. Additionally, an automatic token refresh mechanism must be implemented to allow creation of records from the form at any time.
