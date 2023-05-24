@@ -1,6 +1,6 @@
 Test task for ZohoCRM API integration
 
-How it work: [Youtube link](https://youtu.be/4W6ZKL4NpaA)
+How it work: https://youtu.be/4W6ZKL4NpaA
 
 Title: Creating a Web Form for Zoho CRM Deals and Accounts using Vue.js and Laravel!
 
