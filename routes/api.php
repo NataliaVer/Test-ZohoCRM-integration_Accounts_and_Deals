@@ -3,7 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Account\CreateController;
 use App\Http\Controllers\Api\AccountController;
 use App\Http\Controllers\Api\DealController;
 
