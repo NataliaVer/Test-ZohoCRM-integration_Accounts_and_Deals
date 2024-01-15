@@ -26,9 +26,9 @@ class AccountController extends Controller
     private function getAccessToken()
     {
         //this is changin data
-        $clientId = '1000.HZXPGRT1HWOLBUS6V5L8OSQ894NFIQ';
-        $clientSecret = '4fcd7c79d6c1686d8a6007f7fffa3cf07568858c0f';
-        $refreshToken = '1000.f85b722ef2a65eced2f87fbaa8185929.275104f52ee477f2f19dba19b000eea1';
+        $clientId = 'clientID';
+        $clientSecret = 'clientSecret';
+        $refreshToken = 'refreshToken';
         $grant_type = 'refresh_token';
 
         $response = Http::post('https://accounts.zoho.eu/oauth/v2/token?refresh_token='.
