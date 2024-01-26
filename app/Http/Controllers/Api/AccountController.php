@@ -8,10 +8,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests\Account\StoreRequest;
 use App\Http\Requests\Account\UpdateRequest;
 
+use App\Traits\AccessToken;
+use App\Models\UserData;
+
 use Illuminate\Support\Facades\Http;
 
 class AccountController extends Controller
 {
+    use AccessToken;
+
     /**
      * Display a listing of the resource.
      */
@@ -20,22 +25,6 @@ class AccountController extends Controller
         $accessToken = $this->getAccessToken();
 
         $response = Http::withHeaders(['Authorization' => 'Zoho-oauthtoken '.$accessToken])->get('https://www.zohoapis.eu/crm/v2/Accounts');
-        return $response;
-    }
-
-    private function getAccessToken()
-    {
-        //this is changin data
-        $clientId = '1000.HZXPGRT1HWOLBUS6V5L8OSQ894NFIQ';
-        $clientSecret = '4fcd7c79d6c1686d8a6007f7fffa3cf07568858c0f';
-        $refreshToken = '1000.f85b722ef2a65eced2f87fbaa8185929.275104f52ee477f2f19dba19b000eea1';
-        $grant_type = 'refresh_token';
-
-        $response = Http::post('https://accounts.zoho.eu/oauth/v2/token?refresh_token='.
-            $refreshToken.'&client_id='.$clientId.'&client_secret='.
-            $clientSecret.'&grant_type='.$grant_type
-        );
-        $response = json_decode($response)->access_token;
         return $response;
     }
 

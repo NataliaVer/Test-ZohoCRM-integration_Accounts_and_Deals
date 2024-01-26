@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <table class="table table-striped my-3">
+        <table class="table table-bordered my-3">
             <thead>
                 <tr>
                     <th scope="col" class="d-none">id</th>

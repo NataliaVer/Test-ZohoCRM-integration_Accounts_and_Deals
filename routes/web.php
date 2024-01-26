@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/storeUserData', [App\Http\Controllers\UserDataController::class, 'StoreUserData']);
 
 Route::get('/{page}', [App\Http\Controllers\HomeController::class, 'index'])->where('page', '.*');
